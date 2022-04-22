@@ -1,6 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+var lowercaseletters= [ 'a' ,'b' ,'c' ,'d' ,'e' ,'f' ,'g' ,'h' ,'i' ,'j' ,'k', 'l', 'm' , 'n', 'o' ,'p' ,'q' ,'r' ,'s' ,'t' ,'u' ,'v', 'w', 'x' ,'y' ,'z' ]
+var uppercaseletters= [ 'A' , 'B' , 'C' ,'D' ,'E' ,'F' ,'G' ,'H' ,'I' ,'J' ,'K' ,'L' , 'M' ,'N' ,'O' ,'P' ,'Q' ,'R' ,'S' ,'T', 'U', 'V', 'W', 'X', 'Y', 'Z'] 
+var numbers =['1' ,'2' ,'3' ,'4' ,'5' ,'6' ,'7' ,'8' ,'9' ,'0' ] 
+var specialcharacters =['!' ,'@' ,'#' ,'$' ,'%' ,'^' ,'&' ,'*' ,'_' ,'-', '+' ,'(' ,')' ,]
+
 // Write password to the #password input
 function writePassword() {
   // display hidden criteria container
@@ -12,8 +17,8 @@ function writePassword() {
 
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-
+//   passwordText.value = password;
+  passwordText.value = 'test';
 }
 function generatePassword() { 
 
@@ -22,8 +27,3 @@ function generatePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-// possible password 
-// "1,2,3,4,5,6,7,8,9,0"
-// "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
-// "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"
-// "!,@,#,$,%,^,&,*,_,-,+"
