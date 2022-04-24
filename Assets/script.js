@@ -6,11 +6,11 @@ var numbers =['1' ,'2' ,'3' ,'4' ,'5' ,'6' ,'7' ,'8' ,'9' ,'0' ]
 var specialcharacters =['!' ,'@' ,'#' ,'$' ,'%' ,'^' ,'&' ,'*' ,'_' ,'-', '+' ,'(' ,')' ,]
 
 
-const passwordLength = document.getElementById
-const lowercaseLetters = document.getElementById
-const uppercaseLetters = document.getElementById
-const  numbers = document.getElementById
-const specialCharacters = document.getElementById
+const passwordLength = document.getElementById('passwordLenggth')
+const lowercaseLetters = document.getElementById('lowercaseLetters')
+const uppercaseLetters = document.getElementById('uppercaseLetters')
+const  numbers = document.getElementById('numbers')
+const specialCharacters = document.getElementById('specialCharacters')
 
 passwordLength.addEventListener('input', syncCharacterAmount)
 
@@ -34,10 +34,25 @@ function writePassword() {
 
 
 
-function generatePassword() { 
+function generatePassword (passwordLength, lowercaseLetters, uppercaseLetters, numbers, specialCharacters) { 
+let characters = lowercaseLetters
+if characters = characters.concat(uppercaseLetters)
+if characters = characters.concat(numbers)
+if characters = characters.concat(specialCharacters)
 
-  const value = e.target.value
-  passwordLength.value = value 
+
+const passwordLength = []
+for (let i= 0 ; i < i++ ) {
+
+  const passwordLength = 
+
+
+}
+
+
+const value = e.target.value
+
+  
   
 }
 // Add event listener to generate button
@@ -46,6 +61,10 @@ generateBtn.addEventListener("click", e=> {
   const password = generatePassword (passwordLength, lowercaseLetters, uppercaseLetters, numbers, specialCharacters)
 })
 
+function arrayFromLow
+
+
+passwordLength.value = value 
 
 
 
